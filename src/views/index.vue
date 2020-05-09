@@ -11,6 +11,13 @@ export default {
   methods: {
     viewerCompletedHandler(viewer) {
       global.viewer = viewer
+      viewer.imageryLayers.removeAll()
+      let options = {
+        style: 'dark'
+      }
+      viewer.imageryLayers.addImageryProvider(
+        new Cesium.BaiduImageryProvider(options)
+      )
     }
   }
 }
