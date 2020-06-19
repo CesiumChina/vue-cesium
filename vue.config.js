@@ -2,7 +2,7 @@
  * @Author: Caven
  * @Date: 2018-12-15 00:33:19
  * @Last Modified by: Caven
- * @Last Modified time: 2020-03-19 22:43:09
+ * @Last Modified time: 2020-06-19 09:46:37
  */
 'use strict'
 const path = require('path')
@@ -15,7 +15,7 @@ let resolve = dir => {
 }
 
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/dist/' : '/',
   productionSourceMap: false,
   configureWebpack: {
     module: {
@@ -82,7 +82,7 @@ module.exports = {
     config
       .plugin('define')
       .use(webpack.DefinePlugin, [
-        { CESIUM_BASE_URL: JSON.stringify('./resources/') }
+        { CESIUM_BASE_URL: JSON.stringify('resources/') }
       ])
   }
 }
