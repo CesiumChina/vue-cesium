@@ -796,10 +796,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@dvgis/cesium-map@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@dvgis/cesium-map/-/cesium-map-2.0.1.tgz#d2d39f67fa147afbfd94fc0faf5726209796fb10"
-  integrity sha512-UyJA+OZYIRLTVw8B6EEjTMWEO72e7lBt3PWI7QLul0U8+0v0AmrYwLvHrlU+I8BsefmI3oADtYJMg1uIKOy7Dg==
+"@dvgis/cesium-map@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@dvgis/cesium-map/-/cesium-map-2.2.0.tgz#f6b1a8bdae99538fee2eb53e7e65b1a067727d1c"
+  integrity sha512-ppO6K6EbuiSZVH3VrH0kGsle35xvJtGI4tzOMet8wn8GgU/BJI+1IfSAJBXI8VeUmqEhhYUUmP19ArhZgG0uMQ==
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -2062,10 +2062,10 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-cesium@^1.70.1:
-  version "1.70.1"
-  resolved "https://registry.yarnpkg.com/cesium/-/cesium-1.70.1.tgz#2c9f457455f30e3fb44ce9c385bc9bd34daf8ea4"
-  integrity sha512-SlRTgJFAi0o9Ln+LvZGBZWlco+yWDxC+g+Val6qufcsqeyOq+rrWNL9EtMgfIM2pPHURk9g2zPurqFSRUt2c5Q==
+cesium@^1.71.0:
+  version "1.71.0"
+  resolved "https://registry.yarnpkg.com/cesium/-/cesium-1.71.0.tgz#9a4930f0a06e6f8e8b5a196ea24dc9038778c7fa"
+  integrity sha512-N7cEW+5ILx5+J+O+PYOpMhZe3a9iTksl3PDiIA7H1+D3myjKMeegKNaQtFvOPvq6VeFI5LlRFFBxY3bHrmTfiw==
 
 chalk@^1.1.3:
   version "1.1.3"
