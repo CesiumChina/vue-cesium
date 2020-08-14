@@ -1,8 +1,6 @@
-/*
+/**
  * @Author: Caven
  * @Date: 2020-03-19 22:36:19
- * @Last Modified by: Caven
- * @Last Modified time: 2020-05-09 09:05:41
  */
 import Vue from 'vue'
 
