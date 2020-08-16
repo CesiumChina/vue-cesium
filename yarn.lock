@@ -882,10 +882,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@dvgis/cesium-map@^2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@dvgis/cesium-map/-/cesium-map-2.2.1.tgz#ca1515194dc1f5b9d39e912fa3ac0f789417d949"
-  integrity sha512-7GR+Ta3S+lf8Uc7KB5xusLiKELzUO5G2tY0Obynk+3+rtnzJqLBYbrtpzslmsRVfM/2/u4zskBzWvVC9vwxxdA==
+"@dvgis/cesium-map@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@dvgis/cesium-map/-/cesium-map-2.2.2.tgz#c8104e3c835f7fa92835426935da3ce43ace0689"
+  integrity sha512-JdVEhLXuPxEnSAsMhxjcLMlt/lmFiX8ydGyuJZnDo8yrsaouvm2uDImsPcyXlZ04LA5hY6ETMOyjcYASkqXs3Q==
 
 "@hapi/address@2.x.x":
   version "2.1.4"
