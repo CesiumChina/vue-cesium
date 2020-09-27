@@ -11,7 +11,7 @@
   "dependencies": {
     "@dvgis/cesium-map": "^2.2.2",
     "axios": "^0.19.0",
-    "cesium": "^1.72.0",
+    "cesium": "^1.73.0",
     "core-js": "^3.6.4",
     "element-ui": "^2.13.0",
     "vue": "^2.6.11",
