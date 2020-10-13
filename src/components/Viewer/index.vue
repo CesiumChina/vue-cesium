@@ -25,6 +25,7 @@ export default {
       )
       viewer.scene.screenSpaceCameraController.maximumZoomDistance = 40489014.0
       viewer.scene.backgroundColor = Cesium.Color.TRANSPARENT
+      viewer.imageryLayers.removeAll()
       this.$emit('on-viewer-completed', viewer)
     }
   },
