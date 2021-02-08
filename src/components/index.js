@@ -7,9 +7,7 @@ const componentsWatcher = scaner => {
   scaner.keys().map(key => {
     let name = scaner(key).default.name
     if (name) {
-      Vue.component(name, function(resolve) {
-        require([key + ''], resolve)
-      })
+      Vue.component(name, scaner(key).default)
     }
   })
 }

@@ -1,9 +1,8 @@
-/*
+/**
  * @Author: Caven
- * @Date: 2020-03-19 22:35:48
- * @Last Modified by: Caven
- * @Last Modified time: 2020-03-19 22:48:03
+ * @Date: 2021-02-08 09:25:19
  */
+
 import appLoader from './App.Loader'
 ;(async () => {
   await appLoader.install()

@@ -17,13 +17,14 @@ export default {
         geocoder: false,
         selectionIndicator: false,
         timeline: false,
-        infoBox: false
+        infoBox: false,
+        baseLayerPicker: false,
+        imageryProvider: false
       })
-      viewer.cesiumWidget._creditContainer.style.display = 'none'
+      viewer.cesiumWidget.creditContainer.style.display = 'none'
       viewer.cesiumWidget.screenSpaceEventHandler.removeInputAction(
         Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK
       )
-      viewer.scene.screenSpaceCameraController.maximumZoomDistance = 40489014.0
       viewer.scene.backgroundColor = Cesium.Color.TRANSPARENT
       viewer.imageryLayers.removeAll()
       this.$emit('on-viewer-completed', viewer)

@@ -2,13 +2,11 @@
  * @Author: Caven
  * @Date: 2020-03-19 22:36:19
  */
+
 import Vue from 'vue'
-
-import 'cesium/Widgets/widgets.css'
-
 global.Cesium = require('cesium/Cesium')
-
 require('@dvgis/cesium-map/build/cesium.map.min')
+import 'cesium/Widgets/widgets.css'
 
 const hub = new Vue()
 class AppLoader {
@@ -23,6 +21,7 @@ class AppLoader {
 
   install() {
     global.Vue = Vue
+    global.Hub = hub
     return Promise.all([import('@/components')])
   }
 }

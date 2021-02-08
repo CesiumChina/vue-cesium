@@ -11,11 +11,11 @@ export default {
   methods: {
     viewerCompletedHandler(viewer) {
       global.viewer = viewer
-      let options = {
-        style: 'dark'
-      }
       viewer.imageryLayers.addImageryProvider(
-        new Cesium.BaiduImageryProvider(options)
+        new Cesium.AmapImageryProvider({
+          style: 'img',
+          crs: 'WGS84'
+        })
       )
     }
   }
