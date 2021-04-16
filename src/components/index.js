@@ -3,17 +3,17 @@
  * @Date: 2020-03-19 22:17:28
  */
 
-const componentsWatcher = scaner => {
-  scaner.keys().map(key => {
-    let name = scaner(key).default.name
+const componentsWatcher = scanner => {
+  scanner.keys().map(key => {
+    let name = scanner(key).default.name
     if (name) {
-      Vue.component(name, scaner(key).default)
+      Vue.component(name, scanner(key).default)
     }
   })
 }
-const vueScaner = require.context(
+const vueScanner = require.context(
   '@/components',
   true,
   /^\.\/((?!\/)[\s\S])+\/index\.vue$/
 )
-componentsWatcher(vueScaner)
+componentsWatcher(vueScanner)

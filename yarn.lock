@@ -866,7 +866,7 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@dvgis/cesium-map@^2.4.1":
+"@dvgis/cesium-map@^2.5.0":
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/@dvgis/cesium-map/-/cesium-map-2.5.0.tgz#ca640d8758050bbb92a2c082937c60d0bf96de21"
   integrity sha512-vu5M5VdY2M4Mb7uWTBoj3ZaAJ7FzhmoGYO0cwBfPgGUuXu6+EM68cVw7fIDxehMnUbaZSiE0Yq8Pw5yCzusIKA==

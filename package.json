@@ -9,7 +9,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@dvgis/cesium-map": "^2.4.1",
+    "@dvgis/cesium-map": "^2.5.0",
     "axios": "^0.19.0",
     "cesium": "^1.80.0",
     "core-js": "^3.6.4",
