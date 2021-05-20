@@ -17,6 +17,7 @@ export default {
           crs: 'WGS84'
         })
       )
+      viewer.extend(Cesium.CesiumWidgetMixin)
     }
   }
 }
