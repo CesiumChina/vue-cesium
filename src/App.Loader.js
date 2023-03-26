@@ -4,7 +4,7 @@
  */
 
 import Vue from 'vue'
-global.Cesium = require('cesium/Cesium')
+global.Cesium = require('cesium')
 require('@dvgis/cesium-map')
 require('@dvgis/cesium-widget')
 import 'cesium/Widgets/widgets.css'

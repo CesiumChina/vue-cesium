@@ -13,11 +13,18 @@ export default {
       global.viewer = viewer
       viewer.imageryLayers.addImageryProvider(
         new Cesium.AmapImageryProvider({
-          style: 'img',
-          crs: 'WGS84'
+          style: 'img'
         })
       )
-      viewer.extend(Cesium.CesiumWidgetMixin)
+
+      // const terrainProvider = new Cesium.ArcGISTiledElevationTerrainProvider({
+      //   url:
+      //     'https://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer',
+      //   token:
+      //     'KED1aF_I4UzXOHy3BnhwyBHU4l5oY6rO6walkmHoYqGp4XyIWUd5YZUC1ZrLAzvV40pR6gBXQayh0eFA8m6vPg..'
+      // })
+      // viewer.terrainProvider = terrainProvider
+      // viewer.extend(Cesium.CesiumWidgetMixin)
     }
   }
 }

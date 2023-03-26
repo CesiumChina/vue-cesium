@@ -31,6 +31,7 @@ module.exports = {
       .end()
       .alias.set('cesium', path.resolve(__dirname, cesiumBuild))
       .end()
+
     config.module
       .rule('images')
       .test(/\.(png|jpe?g|gif)(\?.*)?$/)
@@ -39,6 +40,29 @@ module.exports = {
       .options({
         name: 'images/[name].[ext]',
         limit: 10000
+      })
+      .end()
+
+    config.module
+      .rule('cesium')
+      .test(/(\.jsx|\.js)$/)
+      .include.add(resolve('./node_modules/cesium'))
+      .end()
+      .use('babel')
+      .loader('babel-loader')
+      .options({
+        presets: [
+          [
+            '@babel/preset-env',
+            {
+              modules: false,
+              targets: {
+                browsers: ['> 1%', 'last 2 versions', 'ie >= 10']
+              }
+            }
+          ]
+        ],
+        plugins: ['@babel/plugin-transform-runtime']
       })
       .end()
 

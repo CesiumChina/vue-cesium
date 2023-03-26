@@ -10,22 +10,7 @@ export default {
   },
   methods: {
     initViewer() {
-      let viewer = new Cesium.Viewer('viewer-container', {
-        animation: false,
-        fullscreenButton: false,
-        vrButton: false,
-        geocoder: false,
-        selectionIndicator: false,
-        timeline: false,
-        infoBox: false,
-        baseLayerPicker: false,
-        imageryProvider: false
-      })
-      viewer.cesiumWidget.creditContainer.style.display = 'none'
-      viewer.cesiumWidget.screenSpaceEventHandler.removeInputAction(
-        Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK
-      )
-      viewer.scene.backgroundColor = Cesium.Color.TRANSPARENT
+      let viewer = new Cesium.Viewer('viewer-container')
       viewer.imageryLayers.removeAll()
       this.$emit('on-viewer-completed', viewer)
     }
